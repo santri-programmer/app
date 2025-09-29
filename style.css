@@ -1,0 +1,30 @@
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.table-row:hover {
+  background-color: #f3f4f6;
+}
+
+#uploadStatus,
+#notifikasi {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#uploadStatus.show,
+#notifikasi.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.upload-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
