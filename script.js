@@ -115,8 +115,8 @@ function checkUploadStatus() {
     sudahUploadHariIni[kategori] = false;
     document.getElementById("btnUpload").disabled = false;
     document.getElementById("btnUpload").classList.remove("upload-disabled");
-    // document.getElementById("uploadInfo").textContent =
-    //   "Upload data untuk " + kategoriLabel[kategori];
+    document.getElementById("uploadInfo").textContent =
+      "Upload data untuk " + kategoriLabel[kategori];
     showUploadStatus(
       "Siap untuk upload data kategori " + kategoriLabel[kategori],
       null
